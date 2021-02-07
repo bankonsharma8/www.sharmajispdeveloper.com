@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<title>About Me</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body class="w3-content" style="max-width:1300px">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500|Open+Sans">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<style>
+body {
+	background: #23384e;
+}
+.accordion .card {
+	border: none;
+	margin-bottom: 2px;
+}
+.accordion .card-header {
+	background: #21c2a2;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+.accordion .card-header h2 {
+	color: #fff;
+	font-size: 1rem;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+}
+.accordion .card-header h2 span {
+	float: left;
+	margin-top: 10px;
+}
+.accordion .card-header button {
+	color: #fff;
+	font-size: 1.3rem;
+	line-height: 1.3rem;
+	float: right;
+}
+.accordion .card-header button:hover {
+	color: #1e67b4;
+}
+</style>
+<script>
+$(document).ready(function()
+{
+	// Add minus icon for collapse element which is open by default
+	$(".collapse.show").each(function(){
+		$(this).siblings(".card-header").find(".btn i").addClass("fa-minus-circle").removeClass("fa-plus-circle");
+	});
+	
+	// Toggle plus minus icon on show hide of collapse element
+	$(".collapse").on('show.bs.collapse', function(){
+		$(this).parent().find(".card-header .btn i").removeClass("fa-plus-circle").addClass("fa-minus-circle");
+	}).on('hide.bs.collapse', function(){
+		$(this).parent().find(".card-header .btn i").removeClass("fa-minus-circle").addClass("fa-plus-circle");
+	});
+});
+</script>
+<!-- First Grid: Logo & About -->
+<div class="w3-row">
+  <div class="w3-half w3-black w3-container w3-center" style="height:600px">
+    <div class="w3-padding-65">
+      <h1>My Profile</h1>
+    </div>
+    <div class="w3-padding-64">
+      <a href="#" class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">Home</a>
+      <a href="#work" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">My Pics</a>
+      <a href="#work" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Resume</a>
+      <a href="#contact" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Contact</a>
+      <a target="_blank" href="My Timeline.html" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">My Timeline</a>
+    </div>
+  </div>
+  <div class="w3-half w3-blue-grey w3-container" style="height:600px">
+    <div class="w3-padding-75 w3-center">
+      <h1>About Me</h1>
+      <img src="../About me/images/PPZP.JPG" class="w3-margin w3-circle" alt="Person" style="width:30%">
+      <div class="w3-left-align w3-padding-large">
+        <p align="Justify">Hello, i am Narender Sharma,
+            I am a person who is positive about every aspect of life. 
+            There are many things I like to do, to see, and to experience. 
+            I like to read, I like to write; I like to think, I like to dream; I like to talk, I like to listen. 
+            I like to see the sunrise in the morning, I like to see the moonlight at night; 
+            I like to feel the music flowing on my face, I like to smell the wind coming from the ocean. 
+            I like to look at the clouds in the sky with a blank mind, I like to do thought experiment when I cannot sleep in the middle of the night. I like flowers in spring, rain in summer, leaves in autumn, and snow in winter. I like to sleep early, I like to get up late; I like to be alone, I like to be surrounded by people. I like country’s peace, I like metropolis’ noise; I like the beautiful west lake in Mumbai, I like the flat cornfield in Champaign. I like delicious food and comfortable shoes; I like good books and romantic movies. I like the lan d and the nature, I like people. And, I like to laugh.</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid: Work & Resume -->
+<div class="w3-row">
+  <div class="w3-half w3-light-grey w3-center" style="min-height:800px" id="work">
+    <div class="w3-padding-64">
+      <h2>Profile Pic</h2>
+      <p>Images</p>
+    </div>
+    <div class="w3-row">
+      <div class="w3-half">
+        <img src="images/Sharmaji.jpg" style="width:80%"> 
+      </div>
+      <div class="w3-half">
+        <img src="images/Sharmaji2.jpg" style="width:80%"> 
+      </div>
+    </div>&nbsp;
+    <div class="w3-row w3-hide-small">
+      <div class="w3-half">
+        <img src="images/Sharmaji3.jpg" style="width:80%"> 
+      </div>
+      <div class="w3-half">
+        <img src="images/Sharmaji4.jpg" style="width:80%"> 
+      </div>
+    </div>
+
+    
+  </div>
+  <div class="w3-half w3-indigo w3-container" style="min-height:800px">
+    <div class="w3-padding-64 w3-center">
+      <h2>My Timeline </h2>&nbsp;
+      
+   
+    <div class="w3-padding-64 w3-center">
+      <h2>Education and working </h2>&nbsp;
+      
+      <div class="w3-container w3-responsive">
+        <table class="w3-table">
+          <tr>
+            <th>Year</th>
+            <th>Title</th>
+            <th>Where</th>
+          </tr>
+          <tr class="w3-white">
+            <td>2017-2021</td>
+            <td>Capgemini India LTD</td>
+            <td>Bangalore</td>
+          </tr>
+          <tr class="w3-hide-medium">
+            <td>2013-2027</td>
+            <td>ICICI Bank</td>
+            <td>Hyderabad</td>
+          </tr>
+
+          <tr class="w3-white">
+            <td>2009-2011</td>
+            <td>Degree</td>
+            <td>Osmania University</td>
+          </tr>
+          <tr>
+            <td>2008-2010</td>
+            <td>Intermediate</td>
+            <td>AP Intermediate Board</td>
+          </tr>
+          <tr class="w3-white">
+            <td>2000-2008</td>
+            <td>SSC</td>
+            <td>SSC Board</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- Third Grid: Swing By & Contact -->
+<div class="w3-row" id="contact">
+  <div class="w3-half w3-dark-grey w3-container w3-center" style="height:600px">
+    <div class="w3-padding-64">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 offset-lg-2">
+            <div class="accordion mt-5" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="clearfix mb-0">
+                    
+                    
+                    <span><i class="fas fa-university"> &nbsp; My Education </i></span>
+                    
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-plus-circle"></i></button>
+                  </h2>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div style="text-align: left;" class="card-body"><p style="color: rgb(46, 31, 31);">
+                  <i  class="fas fa-graduation-cap"> B.COM from Osmania University</i>
+                 <li><p style="color: rgb(46, 31, 31);"> <i class="fas fa-map-marker-alt">: Hyderabad</i></li>
+                  <li><p style="color: rgb(46, 31, 31);"><i class="fas fa-business-time"> 2009-2012 </i></li>
+                      
+                  
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <span><i class="fas fa-briefcase"> &nbsp; JOB </i></span>
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><i class="fa fa-plus-circle"></i></button>
+                  </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div style="text-align: left;" class="card-body"><p style="color: rgb(46, 31, 31);"></p>
+                 <li><p style="color: rgb(46, 31, 31);"><i class="fas fa-laptop-code" > Capgemini India </i></li>
+                  <li><p style="color: rgb(46, 31, 31);"><i class="fas fa-map-marker-alt"> Bangalore </i></li>
+                  <li><p style="color: rgb(46, 31, 31);"><i class="fas fa-business-time"> 2017-2021 </i></li></div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <span><i class="fas fa-running"> &nbsp; Favourie Sports </i></span>
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><i class="fa fa-plus-circle"></i></button>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div style="text-align: left;" class="card-body"><p style="color: rgb(46, 31, 31);"></p>
+                  <li><p style="color: rgb(46, 31, 31);"><i class="fas fa-futbol" > Soccer </i></li>
+                    <li><p style="color: rgb(46, 31, 31);"><i class="fas fa-swimmer" > Swimming </i></li>
+                    <li><p style="color: rgb(46, 31, 31);"><i class="fas fa-flag-checkered" > Racing </i></li>
+                </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h2 class="mb-0">
+                    <span><i class="fas fa-video"> &nbsp; Favourite Movie </i></span>
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><i class="fa fa-plus-circle"></i></button>
+                  </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                  <li><p style="color: rgb(46, 31, 31);"><i class="fas fa-film" > Shahrukh Khan </i></li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w3-padding-64">
+      
+    </div>
+  </div>
+  <div class="w3-half w3-teal w3-container" style="height:600px">
+    <div class="w3-padding-64 w3-padding-large">
+      <h1>Contact</h1>
+      <p class="w3-opacity">GET IN TOUCH</p>
+      <form class="w3-container w3-card w3-padding-32 w3-white" action="/action_page.php" target="_blank">
+        <div class="w3-section">
+          <label>Name</label>
+          <input class="w3-input" style="width:100%;" type="text" required name="Name">
+        </div>
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input" style="width:100%;" type="text" required name="Email">
+        </div>
+        <div class="w3-section">
+          <label>Message</label>
+          <input class="w3-input" style="width:100%;" type="text" required name="Message">
+        </div>
+        <button type="submit" class="w3-button w3-teal w3-right">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-black w3-padding-16">
+  <div> </div>
+ <div>Reach on Social Media here 
+  <a target="_blank" href="https://www.facebook.com/beingnikhil8/" class="facebook"><i class="fab fa-facebook-f"></i></a> 
+  <a target="_blank" href="https://twitter.com/home" class="twitter"><i class="fab fa-twitter"></i></a>
+  <a target="_blank" href="https://www.instagram.com/nikhilfeb8/" class="instagram"><i class="fab fa-instagram"></i></a>
+  
+        
+ </div>
+</footer>
+
+</body>
+</html>
